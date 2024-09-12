@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+    background-color: hsl(30, 38%, 92%);
+    font-size: 14px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background-color: rgb(255, 255, 255);
+    border-radius: 15px;
+    height: 550px;
+    width: 650px;
+    max-width: 100%;
+    box-shadow: 2px 2px 20px rgb(105, 103, 103);
+    overflow: hidden;
+}
+.card {
+    display: flex;
+    flex-direction: row;
+}
+.image {
+    height: 550px;
+    width: 325px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    object-fit: cover;
+}
+
+.perfumeInfo {
+    padding-left: 25px;
+    padding-right: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.title {
+    font-size: 11px;
+    font-family: Montserrat, sans-serif;
+    color: hsl(228, 12%, 48%);
+    padding-top: 15px;
+}
+
+.perfumeName {
+    font-family: Fraunces, sans-serif;
+    color: hsl(212, 21%, 14%);
+}
+
+.perfumeDesc {
+    font-family: Montserrat, sans-serif;
+    color: hsl(228, 12%, 48%);
+    line-height: 23px
+}
+
+.prices {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.mainPrice {
+    font-family: Fraunces, sans-serif;
+    color: hsl(228, 12%, 48%);
+}
+
+.discountPrice {
+    font-family: Fraunces, sans-serif;
+    color: hsl(228, 12%, 48%);
+    text-decoration: line-through;
+    padding-left: 20px;
+}
+
+.purchase {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+    background-color: hsla(120, 92%, 26%, 0.637);
+    border-radius: 10px;
+}
+
+.purchase:hover {
+    background-color: darkgreen;
+    cursor: pointer;
+}
+
+
+.shoppingCart {
+    padding-right: 10px;
+}
+
+.addToCart {
+    font-family: Montserrat, sans-serif;
+    color: white;
+}
+
+footer { 
+    font-size: 14px; 
+    text-align: center;
+    padding-top: 30px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+ }
+
+footer a { 
+    color: black; 
+    text-decoration: none;
+}
+
+@media (max-width: 500px) {
+    .container {
+        width: 100%;
+        height: auto;
+        margin: 0;
+    }
+    .card {
+        flex-direction: column;
+        align-items: center;
+        height: auto;     
+    }
+
+    .mobileImage {
+        height: 25%;
+        width: 100%;
+        border-radius: 10px 10px 0 0;
+    }
+
+    .text {
+        text-align: center;
+        padding: 20px;
+    }
+
+    .perfumeInfo {
+        width: 100%;
+        height: 75%;
+        padding: 0;
+    }
+}
